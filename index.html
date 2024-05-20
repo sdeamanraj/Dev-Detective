@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <h1>DevDetective</h1>
+                <img class="mode" alt="Img-mode">
+            </div>
+            <div class="search-bar">
+                <div class="input-box">
+                    <img src="assets/search.svg" class="search-icon" alt="Search-icon">
+                    <input type="text" class="input-value" placeholder="Enter GitHub username">
+                    <img src="assets/cross.svg" class="cross-icon" alt="cross-icon">
+                </div>
+                <button class="btn">Search</button>
+            </div>
+            <div class="result-area">
+                <div class="info-area">
+                    <img class="profile-img" alt="Profile-img">
+                    <div class="profile-details">
+                        <p username></p>
+                        <a href="" target="_blank" userlink></a>
+                        <p userdate>Joined 16 Jan 2023</p>
+                    </div>
+                </div>
+                <div class="bio-line"></div>
+                <div class="details-line">
+                    <div class="detail detail-header">Repos</div>
+                    <div class="detail detail-header">Followers</div>
+                    <div class="detail detail-header">Following</div>
+                    <div class="detail detail-value repos">5</div>
+                    <div class="detail detail-value followers">0</div>
+                    <div class="detail detail-value following">1</div>
+                </div>
+                <div class="social-line">
+                    <div class="social"><img class="logo-img" src="assets/location.svg" alt="Img"><span location></span></div>
+                    <div class="social"><img class="logo-img" src="assets/link.svg" alt="Img"><span portfolio></span></div>
+                    <div class="social"><img class="logo-img" src="assets/twitter.svg" alt="Img"><span twitter></span></div>
+                    <div class="social"><img class="logo-img" src="assets/company.svg" alt="Img"><span company></span></div>
+                </div>
+            </div>
+            <div class="loading">
+                <img src="assets/loading.svg" class="loading-img" alt="Img" width="150" height="150">
+                <p>Loading</p>
+            </div>
+            <div class="not-found">
+                <img src="assets/error.png" class="error-img" alt="Img" width="150" height="150">
+                <p>No such Username found</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
